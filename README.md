@@ -1,0 +1,2 @@
+# Ruleta
+Lite Verzija rulete
