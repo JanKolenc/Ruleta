@@ -52,6 +52,7 @@ stevilo = 0
 
 
 def preverjanje_stave():
+    ''' Funkcija preverjanje stave preveri kaj smo zadeli in naredi kartoncek za pomoc pri izplacilu '''
     global stevilo
     vrtljaj = zavrti()
     stevilo = 0
@@ -68,6 +69,7 @@ def preverjanje_stave():
 
 
 def izplaCilo():
+    ''' Funkcija izplacilo iz stave in mnozitelja zadetkov izracuna znesek za izplacilo '''
     izplaCilo = 0
     pravilno = []
     mnozitelj_zadetkov = [2, 36, 3, 3, 2, 2]
@@ -97,6 +99,7 @@ Denarnica = 0
 
 
 def igraj():
+    ''' Funkcija igraj pricne igro '''
     global Denarnica
     global tisk
     premozenje = ('Na voljo imate: ', Denarnica, ' evrov.')
@@ -147,6 +150,7 @@ def igraj():
 
 
 def start():
+    ''' Funkcija start pobere vnesene stave '''
     global Vrsta_stave
     global Stavljena_vsota
     Vrsta_stave = [
@@ -165,6 +169,7 @@ def start():
                             e12.get())]
     igraj()
 
+''' Naslednje funkcije pripravijo izpise za v tkinter '''
 
 def padla_je():
     global stevilo
